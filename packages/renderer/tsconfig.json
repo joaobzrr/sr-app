@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "sourceMap": false,
+    "moduleResolution": "Node",
+    "skipLibCheck": true,
+    "strict": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop":true,
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@main/types": ["../main/src/types"],
+      "@preload": ["../preload/src/index"]
+    },
+    "lib": ["ESNext", "dom", "dom.iterable"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "types/**/*.d.ts",
+    "tailwind.config.js",
+    "vite.config.js",
+    "../main/src/types",
+    "../../types/**/*.d.ts"
+  ],
+  "exclude": ["**/*.spec.ts", "**/*.test.ts"]
+}
